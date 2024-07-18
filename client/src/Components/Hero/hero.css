@@ -1,0 +1,79 @@
+/* hero.css */
+.hero {
+    height: 90vh; /* Full viewport height */
+    background: linear-gradient(180deg,  #fce6f2, #e1fcff);
+    display: flex;
+    align-items: center; /* Vertically center content */
+    padding: 0 50px; /* Horizontal padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Space between elements */
+    padding-left: 50px; /* Padding from the left */
+    line-height: 1.2; /* Line height for better readability */
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 32px; /* Larger font size for heading */
+    font-weight: 600;
+    margin: 0; /* Remove default margin */
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 40px; /* Font size for paragraphs */
+    font-weight: 700;
+    margin: 0; /* Remove default margin */
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and icon */
+}
+
+.hero-hand-icon img {
+    width: 60px; /* Icon size */
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between text and icon */
+    width: 200px; /* Button width */
+    height: 60px; /* Button height */
+    border-radius: 30px; /* Rounded corners */
+    margin-top: 20px; /* Space above button */
+    background: #ff4141; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 18px; /* Font size for button text */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-latest-btn:hover {
+    background: #ff7171; /* Hover background color */
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-right img {
+    /* margin-top: 100px; */
+    width: 60%;
+    max-width: 600px; /* Max width to maintain proportions */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Rounded corners */
+    object-fit: cover; /* Ensure image covers container */
+}

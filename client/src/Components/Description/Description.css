@@ -1,0 +1,54 @@
+/* Description.css */
+
+/* Main container */
+.description {
+    margin: 20px auto; /* Center the component and add vertical spacing */
+    max-width: 800px; /* Set a maximum width for better readability */
+    background: #ffffff; /* White background for clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Internal padding for spacing */
+}
+
+/* Navigation tabs */
+.description-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    margin-bottom: 20px; /* Space between nav and content */
+    border-bottom: 2px solid #eaeaea; /* Light border below tabs */
+}
+
+.description-nav-box {
+    padding: 10px 20px; /* Padding for tabs */
+    margin: 0 10px; /* Space between tabs */
+    font-size: 18px; /* Larger font size */
+    font-weight: 500; /* Semi-bold text */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    color: #555; /* Grey color for inactive tab */
+    border-bottom: 2px solid transparent; /* Transparent bottom border */
+}
+
+.description-nav-box:hover {
+    color: #222; /* Darker text color on hover */
+}
+
+.description-nav-box:not(.fade) {
+    color: #000; /* Active tab color */
+    border-bottom-color: #007bff; /* Blue border for active tab */
+}
+
+.description-nav-box.fade {
+    color: #aaa; /* Lighter color for inactive tab */
+}
+
+/* Description content */
+.description-description {
+    font-size: 16px; /* Standard font size */
+    line-height: 1.6; /* Comfortable line spacing */
+    color: #333; /* Darker text color for better readability */
+    padding: 0 10px; /* Horizontal padding */
+}
+
+.description-description p {
+    margin: 0; /* Remove default margin */
+}

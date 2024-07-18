@@ -1,0 +1,185 @@
+/* ShopCategory.css */
+
+.shop-category {
+    padding: 20px;
+    /* Padding around the component */
+    background-color: #ffffff;
+    /* White background */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 40px;
+    /* Space below the component */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between elements */
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
+}
+
+.shop-category-banner {
+    width: 100%;
+    /* Full width for the banner image */
+    max-height: 300px;
+    /* Set a maximum height to prevent overflow */
+    object-fit: cover;
+    /* Cover the space neatly */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 20px;
+    /* Space below the banner */
+    overflow: hidden;
+    /* Prevent overflow issues */
+}
+
+.shop-category-index-sort {
+    display: flex;
+    /* Flex layout for horizontal arrangement */
+    justify-content: space-between;
+    /* Space between the two elements */
+    align-items: center;
+    /* Center vertically */
+    padding: 0 10px;
+    /* Horizontal padding */
+    margin-bottom: 20px;
+    /* Space below the index and sort section */
+    font-size: 16px;
+    /* Base font size */
+    color: #333;
+    /* Dark text color */
+}
+
+.shop-category-index-sort p span {
+    font-weight: 800;
+}
+
+.shop-category-index-sort p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.shop-category-sort {
+    display: flex;
+    /* Flex layout for horizontal arrangement */
+    align-items: center;
+    /* Center vertically */
+    gap: 8px;
+    /* Space between the text and icon */
+    cursor: pointer;
+    /* Pointer cursor for sort option */
+    font-size: 16px;
+    /* Base font size */
+    color: #555;
+    /* Slightly lighter text color */
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.shop-category-sort img {
+    width: 16px;
+    /* Icon width */
+    height: 16px;
+    /* Icon height */
+}
+
+.shop-category-products {
+    display: grid;
+    /* Grid layout for products */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Responsive columns */
+    gap: 20px;
+    /* Gap between grid items */
+}
+
+.item {
+    background: white;
+    /* White background for each item */
+    padding: 15px;
+    /* Internal padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transform and shadow on hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    /* Full width image */
+    height: 200px;
+    /* Fixed height */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Space below the image */
+    object-fit: cover;
+    /* Cover the image space */
+}
+
+.item p {
+    margin: 10px 0;
+    /* Margin for text */
+    font-size: 18px;
+    /* Base font size */
+    color: #333;
+    /* Text color */
+    font-weight: 600;
+    /* Bold text for product name */
+}
+
+.item-price {
+    display: flex;
+    /* Flex layout for prices */
+    gap: 10px;
+    /* Gap between new and old price */
+    align-items: baseline;
+    /* Align prices on baseline */
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.item-price-new {
+    color: #374151;
+    /* Dark color for new price */
+    font-size: 18px;
+    /* Larger font size */
+    font-weight: 600;
+    /* Bold font weight */
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    /* Lighter color for old price */
+    font-size: 16px;
+    /* Base font size */
+    font-weight: 500;
+    /* Semi-bold font weight */
+    text-decoration: line-through;
+    /* Strikethrough for old price */
+}
+
+.item:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+.shop-category-loadMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 15px;
+    font-weight: 500;
+}

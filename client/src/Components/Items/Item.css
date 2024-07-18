@@ -1,0 +1,54 @@
+/* Item.css */
+.item {
+    width: 100%; /* Full width within the grid item */
+    max-width: 350px; /* Maximum width to maintain consistency */
+    padding: 20px; /* Padding inside the item */
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #e5e7eb; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center; /* Center-align the text */
+}
+
+.item img {
+    width: 100%; /* Fixed width for image */
+    height: 200px; /* Fixed height for image */
+    object-fit: cover; /* Ensure image covers its container */
+    border-radius: 5px; /* Rounded corners for the image */
+    display: block; /* Block display to take full width */
+    margin: 0 auto 10px; /* Center the image and add space below */
+}
+
+.item p {
+    margin: 10px 0; /* Vertical margin for spacing */
+    font-size: 18px; /* Base font size for text */
+    color: #111827; /* Dark gray color for text */
+}
+
+.item-price {
+    display: flex;
+    justify-content: center; /* Center the price section */
+    gap: 10px; /* Space between new and old prices */
+    align-items: center; /* Align price items vertically */
+    margin-top: 10px; /* Space above the price section */
+}
+
+.item-price-new {
+    color: #374151; /* Darker gray for new price */
+    font-size: 18px; /* Font size for new price */
+    font-weight: 600; /* Bolder weight for new price */
+}
+
+.item-price-old {
+    color: #8c8c8c; /* Lighter gray for old price */
+    font-size: 18px; /* Font size for old price */
+    font-weight: 500; /* Normal weight for old price */
+    text-decoration: line-through; /* Strikethrough to indicate discount */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover for more depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}

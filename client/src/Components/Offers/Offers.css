@@ -1,0 +1,67 @@
+/* Offers.css */
+.offers {
+    display: flex; /* Flex layout to arrange content horizontally */
+    justify-content: space-between; /* Space between the left and right sections */
+    align-items: center; /* Center items vertically */
+    height: 80vh; /* Banner height */
+    background: linear-gradient(90deg, #fce6f2, #e1fcff); /* Gradient background for visual interest */
+    margin: 10px 100px;
+    padding: 0 50px; /* Horizontal padding */
+    box-sizing: border-box; /* Include padding in element's width */
+    border-radius: 15px; /* Rounded corners for the banner */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.offers-left {
+    flex: 1; /* Left section takes up half the width */
+    display: flex; /* Flex layout to stack text vertically */
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    gap: 15px; /* Space between text elements */
+    padding-left: 50px; /* Padding on the left */
+}
+
+.offers-left h1 {
+    font-size: 48px; /* Large font size for headlines */
+    color: #333; /* Dark color for text */
+    margin: 0; /* Remove default margin */
+    font-weight: 700; /* Bold font weight */
+}
+
+.offers-left p {
+    font-size: 24px; /* Medium font size for subtext */
+    color: #555; /* Slightly lighter color for subtext */
+    margin: 10px 0; /* Vertical spacing */
+}
+
+.offers-left button {
+    width: 180px; /* Button width */
+    height: 50px; /* Button height */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #ff4141; /* Background color */
+    color: white; /* Button text color */
+    font-size: 18px; /* Font size */
+    font-weight: 600; /* Font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.offers-left button:hover {
+    background-color: #ff7171; /* Lighter shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.offers-right {
+    flex: 1; /* Right section takes up half the width */
+    display: flex; /* Flex layout for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-right: 50px; /* Padding on the right */
+}
+
+.offers-right img {
+    width: 60%;
+    max-width: 600px; /* Max width to maintain proportions */
+    height: auto; /* Maintain aspect ratio */
+}

@@ -1,0 +1,10 @@
+.Breadcrumbs{
+    margin: 20px;
+}
+.Breadcrumbs span{
+    margin-top: -5px;
+}
+
+.main-span{
+    color: red;
+}
